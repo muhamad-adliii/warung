@@ -1,8 +1,8 @@
 <!-- navbar -->
-<nav class="navbar py-5 px-9 bg-[#ffffff] flex justify-between items-center border-b">
+<nav class="navbar py-5 px-9 bg-[#ffffff] flex justify-between items-center border-b border-gray-400">
     <!-- menu icon for sidebar -->
     <div class="search flex items-center">
-        <div class="menu-icon cursor-pointer">
+        <div class="menu-icon cursor-pointer" onclick="openSidebar()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-7">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -49,13 +49,13 @@
                 class="absolute hidden right-0 mt-3 w-52 bg-[#ffffff] rounded-xl capitalize shadow-lg border z-30 translate-x-3">
                 <div class="flex flex-col">
                     <!-- profile -->
-                    <div class="px-4 py-3 border-b">
+                    <div class="px-4 py-3 border-b md:border-none">
                         <p class="text-sm font-medium text-gray-800">john doe</p>
                         <p class="text-xs text-gray-500">administrator</p>
                     </div>
                 </div>
                 <!-- list profile -->
-                <div class="flex flex-col py-1">
+                <div class="flex md:hidden flex-col py-1">
                     <a href="#" class="flex items-center gap-2 hover:bg-gray-100 transition text-sm px-4 py-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-5 cursor-pointer">
