@@ -61,12 +61,12 @@
             </div>
         </div>
     </div>
-    <!-- <div class="mt-4">
-                    <div class="bg-white rounded-xl shadow p-6">
-                        <h2 class="font-semibold mb-4 capitalize">data penjualan</h2>
-                        <div class="h-64 md:h-80">
-                            <canvas id="myChart"></canvas>
-                        </div>
-                    </div>
-                </div> -->
+    <div class="mt-4">
+        <div class="bg-white rounded-xl shadow p-6">
+            <h2 class="font-semibold mb-4 capitalize">data penjualan</h2>
+            <div class="h-64 md:h-80">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
 @endsection

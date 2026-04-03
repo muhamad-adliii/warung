@@ -2,7 +2,6 @@ const profileBtn = document.getElementById("profileBtn");
 const profileMenu = document.getElementById("profileMenu");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
-const ctx = document.getElementById("myChart");
 
 profileBtn.addEventListener("click", () => {
     profileMenu.classList.toggle("hidden");
@@ -16,69 +15,20 @@ document.addEventListener("click", (e) => {
 
 // sidebar
 function openSidebar() {
+    sidebar.classList.toggle("-translate-x-full");
+
     if (window.innerWidth < 1024) {
-        sidebar.classList.remove("-translate-x-full");
-        overlay.classList.remove("hidden");
-    } else {
-        sidebar.classList.toggle("w-72");
-        sidebar.classList.toggle("w-0");
+        overlay.classList.toggle("hidden");
     }
+
+    setTimeout(() => {
+        if (window.myChart) {
+            window.myChart.resize();
+        }
+    }, 300);
 }
 
 overlay.addEventListener("click", () => {
     sidebar.classList.add("-translate-x-full");
     overlay.classList.add("hidden");
 });
-
-// const labels = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul"];
-
-// const data = {
-//     labels: labels,
-//     datasets: [
-//         {
-//             label: "Penjualan",
-//             data: [65, 59, 80, 81, 56, 55, 40],
-//             backgroundColor: [
-//                 "rgba(255, 99, 132, 0.2)",
-//                 "rgba(255, 159, 64, 0.2)",
-//                 "rgba(255, 205, 86, 0.2)",
-//                 "rgba(75, 192, 192, 0.2)",
-//                 "rgba(54, 162, 235, 0.2)",
-//                 "rgba(153, 102, 255, 0.2)",
-//                 "rgba(201, 203, 207, 0.2)",
-//             ],
-//             borderColor: [
-//                 "rgb(255, 99, 132)",
-//                 "rgb(255, 159, 64)",
-//                 "rgb(255, 205, 86)",
-//                 "rgb(75, 192, 192)",
-//                 "rgb(54, 162, 235)",
-//                 "rgb(153, 102, 255)",
-//                 "rgb(201, 203, 207)",
-//             ],
-//             borderWidth: 1,
-//             borderRadius: 6, // biar modern (rounded bar)
-//         },
-//     ],
-// };
-
-// const config = {
-//     type: "bar",
-//     data: data,
-//     options: {
-//         responsive: true,
-//         maintainAspectRatio: false,
-//         plugins: {
-//             legend: {
-//                 display: false,
-//             },
-//         },
-//         scales: {
-//             y: {
-//                 beginAtZero: true,
-//             },
-//         },
-//     },
-// };
-
-// new Chart(ctx, config);
