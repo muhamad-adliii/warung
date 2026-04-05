@@ -18,8 +18,10 @@
                 class="p-2 border-2 border-gray-400 mb-4 rounded-lg ">
             <label for="" class="text-base font-semibold">password</label>
             <input type="password" name="" id="" placeholder="Password"
-                class="p-2 border-2 border-gray-400 mb-4 rounded-lg">
-            <button class="cursor-pointer capitalize bg-[#3345df] py-3 rounded-2xl text-lg text-[#ffffff]">log in</button>
+                class="p-2 border-2 border-gray-400 mb-4 rounded-lg ">
+            <button
+                class="cursor-pointer capitalize bg-[#3345df] py-3 rounded-xl text-lg text-[#ffffff] hover:bg-[#142088] mb-5">log
+                in</button>
         </form>
     </div>
 @endsection
