@@ -15,9 +15,8 @@
 <body class="bg-[#f9fafb] font-[Poppins] overflow-hidden h-screen">
     <div class="flex h-full">
         <!-- sidebar -->
-        <aside id="sidebar" class="fixed top-0 left-0 h-full w-72 bg-white z-50 transform transition-all duration-300
-           -translate-x-full lg:translate-x-0
-           overflow-y-auto border-r border-gray-400">
+        <aside id="sidebar" class="top-0 left-0 h-full w-72 bg-white z-50 transform transition-all duration-300
+           -translate-x-full lg:translate-x-0 overflow-y-auto border-r border-gray-400 lg:72">
             @include('components.sidebar')
         </aside>
         <!-- overlay -->

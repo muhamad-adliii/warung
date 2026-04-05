@@ -50,4 +50,6 @@ const config = {
     },
 };
 
-window.myChart = new Chart(ctx, config);
+if (ctx) {
+    window.myChart = new Chart(ctx, config);
+}
