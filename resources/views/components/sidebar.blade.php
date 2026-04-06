@@ -12,7 +12,8 @@
     <nav class="p-4">
         <ul class="space-y-2 mt-12">
             <li>
-                <a href="#" class="flex gap-3 font-medium px-2 py-2 rounded-lg bg-gray-200 transition duration-200">
+                <a href="{{ url('/') }}"
+                    class="flex gap-3 font-medium px-2 py-2 rounded-lg bg-gray-200 transition duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -23,7 +24,7 @@
             </li>
             <span class="text-sm text-gray-500">master data</span>
             <li>
-                <a href="#"
+                <a href="{{ url('/kategori') }}"
                     class="flex gap-3 font-medium px-2 py-2 rounded-lg hover:bg-gray-200 transition duration-200 ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">

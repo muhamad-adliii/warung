@@ -1,7 +1,45 @@
-window.addEventListener("load", () => {
-    const ctx = document.getElementById("myChart");
+// Chart configuration and management
+let chartInstance = null;
+let resizeObserver = null;
 
+// Setup resize observer untuk chart container
+function setupChartResizeObserver(chartCanvas) {
+    if (resizeObserver) {
+        resizeObserver.disconnect();
+    }
+
+    if (chartCanvas && chartCanvas.parentElement) {
+        resizeObserver = new ResizeObserver(() => {
+            resizeChart();
+        });
+
+        resizeObserver.observe(chartCanvas.parentElement);
+
+        // Juga observe window resize
+        window.addEventListener("resize", () => {
+            resizeChart();
+        });
+    }
+}
+
+// Fungsi untuk resize chart
+function resizeChart() {
+    if (chartInstance && typeof chartInstance.resize === "function") {
+        requestAnimationFrame(() => {
+            chartInstance.resize();
+        });
+    }
+}
+
+// Initialize chart
+function initChart() {
+    const ctx = document.getElementById("myChart");
     if (!ctx) return;
+
+    // Destroy existing chart if any
+    if (chartInstance) {
+        chartInstance.destroy();
+    }
 
     const labels = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul"];
 
@@ -31,6 +69,8 @@ window.addEventListener("load", () => {
                 ],
                 borderWidth: 1,
                 borderRadius: 6,
+                barPercentage: 0.7,
+                categoryPercentage: 0.8,
             },
         ],
     };
@@ -45,22 +85,64 @@ window.addEventListener("load", () => {
                 legend: {
                     display: false,
                 },
+                tooltip: {
+                    mode: "index",
+                    intersect: false,
+                },
             },
             scales: {
                 y: {
                     beginAtZero: true,
+                    grid: {
+                        drawBorder: true,
+                        color: "rgba(0, 0, 0, 0.05)",
+                    },
                 },
+                x: {
+                    grid: {
+                        display: false,
+                    },
+                },
+            },
+            animation: {
+                duration: 750,
+                easing: "easeInOutQuart",
             },
         },
     };
 
-    // INIT CHART
-    window.myChart = new Chart(ctx, config);
+    chartInstance = new Chart(ctx, config);
 
-    // 🔥 AUTO RESIZE TANPA REFRESH
-    const observer = new ResizeObserver(() => {
-        window.myChart.resize();
-    });
+    // Setup resize observer untuk chart
+    setupChartResizeObserver(ctx);
 
-    observer.observe(ctx.parentElement);
-});
+    return chartInstance;
+}
+
+// Update chart data (opsional, untuk dynamic data)
+function updateChartData(newLabels, newData) {
+    if (!chartInstance) return;
+
+    chartInstance.data.labels = newLabels;
+    chartInstance.data.datasets[0].data = newData;
+    chartInstance.update();
+}
+
+// Destroy chart (cleanup)
+function destroyChart() {
+    if (chartInstance) {
+        chartInstance.destroy();
+        chartInstance = null;
+    }
+
+    if (resizeObserver) {
+        resizeObserver.disconnect();
+        resizeObserver = null;
+    }
+}
+
+// Export functions ke global scope
+window.initChart = initChart;
+window.resizeChart = resizeChart;
+window.updateChartData = updateChartData;
+window.destroyChart = destroyChart;
