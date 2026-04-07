@@ -11,15 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Smooth transition untuk sidebar */
-        /* .sidebar-transition {
-            transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
-        } */
-
         .content-transition {
             transition: margin-left 0.3s ease-in-out;
         }
