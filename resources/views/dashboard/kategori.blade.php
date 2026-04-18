@@ -26,7 +26,7 @@
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                    add student
+                    add Items
                 </button>
             </div>
         </div>
@@ -39,20 +39,14 @@
                             <thead class="bg-gray-50">
                                 <tr>
                                     <th scope="col"
-                                        class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6 w-16">
+                                        class="py-3.5 pl-4 pr-15 text-left text-sm font-semibold text-gray-900 sm:pl-6 w-16">
                                         NO
-                                    </th>
-                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 w-32">
-                                        Nama Barang
                                     </th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 w-28">
                                         Kategori
                                     </th>
-                                    <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 w-36">
-                                        Tanggal Pengiriman
-                                    </th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 w-28">
-                                        Harga
+                                        Jumlah Barang
                                     </th>
                                     <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 w-20">
                                         Aksi
@@ -63,10 +57,7 @@
                                 <!-- Row 1 -->
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <span class="font-semibold">01</span>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="font-medium text-gray-900">Chocolatos</div>
+                                        <span class="font-semibold">1</span>
                                     </td>
                                     <td class="whitespace-nowrap px-2 py-4 text-sm">
                                         <span
@@ -74,11 +65,10 @@
                                             Makanan
                                         </span>
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="text-gray-900">31-05-2026</div>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900">
-                                        Rp 2.000
+                                    <td class="whitespace-nowrap px-15 py-4 text-sm">
+                                        <span class="inline-flex items-center rounded-full bg-green-50 text-sm font-medium">
+                                            10
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm">
                                         <div class="flex items-center gap-2 ">
@@ -102,10 +92,7 @@
                                 <!-- row 2 -->
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <span class="font-semibold">02</span>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="font-medium text-gray-900">Aqua</div>
+                                        <span class="font-semibold">2</span>
                                     </td>
                                     <td class="whitespace-nowrap px-2 py-4 text-sm">
                                         <span
@@ -113,11 +100,10 @@
                                             Minuman
                                         </span>
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="text-gray-900">20-07-2026</div>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900">
-                                        Rp 5.000
+                                    <td class="whitespace-nowrap px-15 py-4 text-sm">
+                                        <span class="inline-flex items-center rounded-full bg-green-50 text-sm font-medium">
+                                            20
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm">
                                         <div class="flex items-center gap-2 ">
@@ -140,10 +126,7 @@
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <span class="font-semibold">03</span>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="font-medium text-gray-900">Wipol</div>
+                                        <span class="font-semibold">3</span>
                                     </td>
                                     <td class="whitespace-nowrap px-2 py-4 text-sm">
                                         <span
@@ -151,11 +134,10 @@
                                             PRT
                                         </span>
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="text-gray-900">05-01-2026</div>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900">
-                                        Rp 3.000
+                                    <td class="whitespace-nowrap px-15 py-4 text-sm">
+                                        <span class="inline-flex items-center rounded-full bg-green-50 text-sm font-medium">
+                                            25
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm">
                                         <div class="flex items-center gap-2 ">
@@ -178,10 +160,7 @@
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <span class="font-semibold">04</span>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="font-medium text-gray-900">Nextar</div>
+                                        <span class="font-semibold">4</span>
                                     </td>
                                     <td class="whitespace-nowrap px-2 py-4 text-sm">
                                         <span
@@ -189,11 +168,10 @@
                                             Makanan
                                         </span>
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="text-gray-900">15-09-2026</div>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900">
-                                        Rp 2.500
+                                    <td class="whitespace-nowrap px-15 py-4 text-sm">
+                                        <span class="inline-flex items-center rounded-full bg-green-50 text-sm font-medium">
+                                            47
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm">
                                         <div class="flex items-center gap-2 ">
@@ -216,10 +194,7 @@
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-                                        <span class="font-semibold">04</span>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="font-medium text-gray-900">Kispray</div>
+                                        <span class="font-semibold">5</span>
                                     </td>
                                     <td class="whitespace-nowrap px-2 py-4 text-sm">
                                         <span
@@ -227,11 +202,11 @@
                                             PRT
                                         </span>
                                     </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm">
-                                        <div class="text-gray-900">12-08-2026</div>
-                                    </td>
-                                    <td class="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900">
-                                        Rp 2.000
+                                     <td class="whitespace-nowrap px-15 py-4 text-sm">
+                                        <span
+                                            class="inline-flex items-center rounded-full bg-green-50 text-sm font-medium">
+                                            17
+                                        </span>
                                     </td>
                                     <td class="whitespace-nowrap px-3 py-4 text-sm">
                                         <div class="flex items-center gap-2 ">
