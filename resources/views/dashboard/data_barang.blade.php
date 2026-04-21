@@ -32,7 +32,7 @@
                     <!-- header -->
                     <div class="px-6 py-4 border-b border-gray-200">
                         <h2 class="text-base font-semibold text-gray-800">Tabel Data</h2>
-                    </div>
+                    </div>  
                     <div class="px-6 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center
                             gap-4 border-b border-gray-200">
                         <div class="flex items-center gap-3">
