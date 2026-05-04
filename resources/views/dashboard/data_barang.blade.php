@@ -59,7 +59,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Table -->
+                    <!-- Table 1 -->
                     <div class="overflow-x-auto">
                         <table class="min-w-250 md:min-w-full divide-y divide-gray-200">
                             <thead class="bg-gray-50">
@@ -85,6 +85,7 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-white divide-y divide-gray-200">
+                                <!-- table 1 -->
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">1</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Indomie</td>

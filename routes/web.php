@@ -20,4 +20,8 @@ Route::get('/barang_masuk', function () {
     return view('dashboard/barang_masuk');
 });
 
+Route::get('/penjualan', function () {
+    return view('dashboard/penjualan');
+});
+
 Route::get('/login', [AuthController::class, 'login']);

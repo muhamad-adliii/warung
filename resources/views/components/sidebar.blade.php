@@ -58,7 +58,7 @@
                 </a>
             </li>
             <li>
-                <a href="#"
+                <a href="{{ url('penjualan') }}"
                     class="flex gap-3 font-medium px-2 py-2 rounded-lg hover:bg-gray-200 transition duration-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
