@@ -16,11 +16,16 @@
             </div>
         </div>
         <!-- list page -->
-        <div class="flex justify-between items-center mt-10 border-b-2 py-2 border-gray-200">
-            <div class="flex gap-6">
-                <a href="#" class="hover:border-b hover:border-gray-700 transition-all">Kasir</a>
-                <a href="#">Penjualan</a>
-                <a href="#">Detail Penjualan</a>
+        <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-center gap-5 md:gap-0 mt-10 border-b-2 py-2 border-gray-200">
+            <div class="flex gap-6 items-center">
+                <a href="#"
+                    class="after:border-b-2 relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:border-gray-700 hover:after:w-full after:transition-all">Kasir</a>
+                <a href="#"
+                    class="after:border-b-2 relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:border-gray-700 hover:after:w-full after:transition-all">Penjualan</a>
+                <a href="#"
+                    class="after:border-b-2 relative inline-block after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:border-gray-700 hover:after:w-full after:transition-all">Detail
+                    Penjualan</a>
             </div>
             <div class="flex items-center gap-2">
                 <div class="relative">
@@ -35,6 +40,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- table -->
+        <div class="">
+            
         </div>
     </div>
 @endsection

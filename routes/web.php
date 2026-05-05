@@ -24,4 +24,8 @@ Route::get('/penjualan', function () {
     return view('dashboard/penjualan');
 });
 
+Route::get('/laporan', function () {
+    return view('dashboard/laporan');
+});
+
 Route::get('/login', [AuthController::class, 'login']);
