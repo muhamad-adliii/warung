@@ -58,7 +58,6 @@
                 </div>
             </div>
         </div>
-
         <!--  Filter & Search  -->
         <div class="bg-white rounded-2xl shadow-card p-5 md:p-6 mb-8 border border-gray-100">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-end">

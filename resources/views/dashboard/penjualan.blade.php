@@ -2,10 +2,9 @@
 
 @section('content')
     <div class="wrapper p-6">
-
         <!-- HEADER -->
         <div class="flex flex-col gap-3">
-            <h3 class="text-2xl font-semibold">
+            <h3 class="text-2xl font-medium">
                 PENJUALAN
             </h3>
             <!-- breadcrumb -->
@@ -22,12 +21,12 @@
                 </span>
             </div>
         </div>
-
         <!-- TAB MENU -->
         <div
             class="flex flex-col md:flex-row justify-between items-start md:items-center gap-5 mt-10 border-b border-gray-200 pb-3">
             <div class="flex gap-6 items-center overflow-x-auto">
-                <button onclick="showSection('kasir', 'Kasir')" class="tab-btn pb-2 border-b-2 border-black font-medium cursor-pointer">
+                <button onclick="showSection('kasir', 'Kasir')"
+                    class="tab-btn pb-2 border-b-2 border-black font-medium cursor-pointer">
                     Kasir
                 </button>
                 <button onclick="showSection('transaksi', 'Penjualan')"
