@@ -28,4 +28,8 @@ Route::get('/laporan', function () {
     return view('dashboard/laporan');
 });
 
+Route::get('/stock', function () {
+    return view('dashboard/stock');
+});
+
 Route::get('/login', [AuthController::class, 'login']);
