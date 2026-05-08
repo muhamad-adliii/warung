@@ -9,7 +9,7 @@
             </h3>
             <!-- breadcrumb -->
             <div class="flex items-center text-sm text-gray-500">
-                <span>Penjualan</span>
+                <span class="text-lg">Penjualan</span>
                 <span class="flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-5 mx-1">
