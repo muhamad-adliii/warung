@@ -60,7 +60,7 @@
         </div>
         <!--  Filter & Search  -->
         <div class="bg-white rounded-2xl shadow-card p-5 md:p-6 mb-8 border border-gray-100">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 items-end">
+            <div class="grid grid-cols-1 xl:grid-cols-3  gap-5 items-end">
                 <!-- Search Laporan -->
                 <div>
                     <label class="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
