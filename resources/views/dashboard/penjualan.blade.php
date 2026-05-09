@@ -50,7 +50,6 @@
                 </div>
             </div>
         </div>
-
         <!-- SECTION KASIR -->
         <div id="kasirSection" class="mt-10">
             <div class="bg-white border border-gray-200 rounded-2xl shadow-sm">
@@ -161,7 +160,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- BUTTON -->
                 <div class="flex flex-col sm:flex-row justify-center gap-4 px-6 pb-6">
                     <button

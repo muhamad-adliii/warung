@@ -1,5 +1,5 @@
 <!-- navbar -->
-<nav class="navbar py-5 px-9 bg-[#ffffff] flex justify-between items-center border-b border-gray-400">
+<nav class="navbar py-5 px-9 bg-[#ffffff] flex justify-between items-center border-b border-gray-400 z-30">
     <!-- menu icon for sidebar -->
     <div class="search flex items-center">
         <div class="menu-icon cursor-pointer" onclick="openSidebar()">

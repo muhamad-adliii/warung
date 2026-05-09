@@ -15,13 +15,13 @@
                 </div>
             </div>
             <div>
-                <button
-                    class="py-2 bg-[#5d5de7] w-full font-medium cursor-pointer hover:bg-[#4040e8] flex gap-2 text-[#ffffff] capitalize rounded-lg md:w-auto justify-center px-10 text-md">
+                <button data-modal-target="tambahBarangModal"
+                    class=" py-2 bg-[#5d5de7] w-full font-medium cursor-pointer hover:bg-[#4040e8] flex gap-2 text-[#ffffff] capitalize rounded-lg md:w-auto justify-center px-10 text-md">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                    add Items
+                    Tambah Barang
                 </button>
             </div>
         </div>
@@ -32,13 +32,13 @@
                     <!-- header -->
                     <div class="px-6 py-4 border-b border-gray-200">
                         <h2 class="text-base font-semibold text-gray-800">Tabel Data</h2>
-                    </div>  
+                    </div>
                     <div class="px-6 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center
-                            gap-4 border-b border-gray-200">
+                                                gap-4 border-b border-gray-200">
                         <div class="flex items-center gap-3">
                             <span class="text-sm text-gray-600">Show</span>
                             <select class="border border-gray-300 rounded-md px-2 py-1 text-sm focus:outline-none
-                                focus:ring-2 focus:ring-blue-500">
+                                                    focus:ring-2 focus:ring-blue-500">
                                 <option>10</option>
                                 <option>8</option>
                                 <option>5</option>
@@ -94,14 +94,14 @@
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">30</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
                                         <div class="flex items-center gap-2 ">
-                                            <button class=" cursor-pointer">
+                                            <button data-modal-target="editBarangModal" class="cursor-pointer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
                                                 </svg>
                                             </button>
-                                            <button class="cursor-pointer">
+                                            <button data-modal-target="hapusBarangModal" class="cursor-pointer">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -217,5 +217,9 @@
                 </div>
             </div>
         </div>
+        <!-- pop up tambah -->
+        @include('partials.barang.tambah')
+        @include('partials.barang.edit')
+        @include('partials.barang.hapus')
     </div>
 @endsection
