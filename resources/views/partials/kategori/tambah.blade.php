@@ -11,7 +11,8 @@
             </button>
         </div>
         <!-- form -->
-        <form action="" method="post" class="space-y-5">
+        <form action="{{ route('kategori.store') }}" method="post" class="space-y-5">
+            @csrf
             <div class="flex flex-col gap-2">
                 <label for="" class="text-base">Kategori :</label>
                 <select class="w-full border rounded-xl px-4 py-2">

@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\BarangController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\BarangMasukController;
+use App\Http\Controllers\PenjualanController;
+use App\Models\Kategori;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
@@ -33,3 +38,8 @@ Route::get('/stock', function () {
 });
 
 Route::get('/login', [AuthController::class, 'login']);
+
+Route::resource('kategori', KategoriController::class);
+Route::resource('barang', BarangController::class);
+Route::resource('barang-masuk', BarangMasukController::class);
+Route::resource('penjualan', PenjualanController::class);

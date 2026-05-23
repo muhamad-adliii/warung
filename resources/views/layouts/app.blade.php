@@ -34,7 +34,7 @@
     </style>
 </head>
 
-<body class="bg-[#f9fafb] font-[Poppins] h-screen overflow-hidden">
+<body class="bg-[#f9fafb] font-[Poppins] h-screen overflow-hidden scrollbar-none">
     <div class="flex h-full relative">
 
         <!-- SIDEBAR -->
